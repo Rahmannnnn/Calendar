@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="icon" href="calendar2.png"/>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="top">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="menu">
+                    <select name="months" id="months" onchange="getMonth()"></select>
+                    <input type="text" id="year" onkeyup="validateYear()" onsubmit="validateYear()"></input>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="mid">
+                <div class="day">Sunday</div>
+                <div class="day">Monday</div>
+                <div class="day">Tuesday</div>
+                <div class="day">Wednesday</div>
+                <div class="day">Thursday</div>
+                <div class="day">Friday</div>
+                <div class="day">Saturday</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
